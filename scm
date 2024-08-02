@@ -1,3 +1,26 @@
+package com.scm.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class PageController {
+
+    @RequestMapping("/home")
+    // handler method
+    public String home(Model model) {
+        System.out.println("Home page handler");
+
+
+
+
+
+
+
+
+
+
 spring.application.name=scm
 
 server.port=8080
