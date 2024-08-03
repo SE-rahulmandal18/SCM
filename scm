@@ -12,6 +12,19 @@ public class PageController {
     public String home(Model model) {
         System.out.println("Home page handler");
 
+        // sending data to view
+        model.addAttribute("name", "Substring Technologies");
+        model.addAttribute("youtubeChannel", "Learn code with Rahul");
+        model.addAttribute("githubRepo", "https://github.com/SE-rahulmandal18");
+    <h1 class="font-bold text-2" data-th-text="${name}">welcome to home page</h1>
+    <p>Youtube Channel : <span data-th-text="${youtubeChannel}"></span></p>
+    <P>Github Repo Link <span th:text="${githubRepo}"></span>: </P>
+
+    <a data-th-href="${githubRepo}">Click Here to open</a>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi deleniti in architecto consequuntur eaque
+      totam itaque quia hic fuga adipisci delectus commodi aperiam officia debitis mollitia, omnis, libero, iure dolore.
+    </p>
 
 
 
